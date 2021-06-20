@@ -1,0 +1,6 @@
+pandas
+telegram
+pyshorteners
+pygooglenews
+datetime
+gunicorn
