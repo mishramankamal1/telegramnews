@@ -1,4 +1,3 @@
-import telegram
 import pyshorteners
 import pandas as pd
 import notification
@@ -34,9 +33,8 @@ news_time = "<b>News @ {}</b>".format(date_now)
 
 news_str = news_time + constant.news_message + "\n\n\n" + news_story_str
 
-while(True):
+while True:
     notification.send_to_telegram(news_str)
-    time.sleep(3)
+    time.sleep(3*60)
 
 
-#print(pd.__version__)
