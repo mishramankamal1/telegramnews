@@ -5,6 +5,7 @@ import notification
 from pygooglenews import GoogleNews
 from datetime import datetime
 import constant
+import time
 
 
 def short_url(url):
@@ -33,6 +34,9 @@ news_time = "<b>News @ {}</b>".format(date_now)
 
 news_str = news_time + constant.news_message + "\n\n\n" + news_story_str
 
-#notification.send_to_telegram(news_str)
+while(True):
+    notification.send_to_telegram(news_str)
+    time.sleep(3)
 
-print(pd.__version__)
+
+#print(pd.__version__)
