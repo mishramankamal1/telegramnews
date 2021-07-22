@@ -32,4 +32,4 @@ while True:
     news_str = news_time + constant.news_message + "\n\n\n" + news_story_str
     notification.send_to_telegram(news_str)
 
-    time.sleep(60 * 60)
+    time.sleep(60 * 60
